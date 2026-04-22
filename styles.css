@@ -114,6 +114,30 @@ header h1{
     letter-spacing: 0.05em;
     position: relative;
 }
+/* ADD FLOATING SVG LOGO BEFORE THE H1 */
+ header h1::before{
+    content: "";
+    position: absolute;
+    left:-.5rem;
+    width: 3.75rem;
+    height: 3.75rem;
+    transform: translateY(-50%);
+    background: url('images/vanguard-logo.svg') no-repeat center/contain;
+
+}
+#menu-toggle {
+    display: none;
+}
+.menu-toggle{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: 1.25rem;
+    cursor: pointer;
+    padding: 0;
+    z-index: 200;
+}
 
 /* ADD TO "INNOVATION & INVESTMENT SECTION (Photo by Kevin on Unsplash) */
  #hero{
@@ -126,16 +150,6 @@ header h1{
     overflow: hidden;
 }
 
-/* ADD FLOATING SVG LOGO BEFORE THE H1 */
- header h1::before{
-    content: "";
-
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
-    background: url('images/vanguard-logo.svg') no-repeat center/contain;
-
-}
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
     display: grid;
