@@ -273,6 +273,67 @@ header nav a:hover{
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.service-card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.35);
+}
+
+.service-card h3{
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.service-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#results{
+    background-color: var(--blue);
+    padding: 3rem 0;
+    color: var(--white)
+}
+
+#results h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.75em;
+}
+.results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+.results-table h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.results-table table{
+    width: 100%;
+    color: var(--white);
+}
+.results-table th, .results-table td{
+    padding: 0.65rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--charcoal);
+    font-size: 0.95rem;
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.results-table th {
+    font-weight: 700;
+    color: var(--blue);
+}
+
+.bar-chart h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
@@ -318,6 +379,56 @@ header nav a:hover{
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
+}
+
+#contact {
+    background-color: var(--black);
+    padding: 3rem 0;
+}
+#contact h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--white);
+}
+
+#contact > .container > p{
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 1.75rem;
+    color: var(--white);
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    width: 100%;
+}
+
+.form-group{
+    display: flex;
+    flex-direction:column;
+    gap: 0.35rem;
+}
+
+.form-group label{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.form-group input,
+.form-group textarea {
+    font-family: var(--font);
+    font-size: 1rem;
+    padding: 0.65rem 0.85rem;
+    border: 2px solid var(--blue);
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: var(--charcoal);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    outline: none;
 }
 
 
