@@ -120,11 +120,12 @@ header h1{
     content: "";
     position: absolute;
     left:0;
+    top: 50%;
     width: 2.75rem;
     height: 2.75rem;
     transform: translateY(-50%);
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
-    top: 50%;
+
 
 }
 #menu-toggle {
