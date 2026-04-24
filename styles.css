@@ -197,6 +197,82 @@ header nav a:hover{
     margin-bottom: 1rem;;
     animation: fadeInDown 0.8s ease-out forwards;
 }
+#hero p {
+    color: var(--white);
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    line-height: 1.7;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+}
+
+/*button*/
+.btn{
+    display: inline-block;
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    transform: 0.2s ease;
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+}
+
+.btn:hover{
+    background-color: var(--blue);
+    transform: translateY(-2px);
+}
+
+/*expertise*/
+#expertise {
+    background-color: var(--white);
+    padding: 3rem 0;
+}
+
+#expertise h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--black);
+}
+
+#expertise p{
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 800px;
+    color: var(--charcoal);  
+}
+#services {
+    background-color: var(--white);
+    padding: 3rem 0;
+}
+
+#services h2{
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--black);
+}
+
+.service-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.service-card{
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
 
 /* THIS ONE IS DONE FOR YOU */
 #bar-chart {
