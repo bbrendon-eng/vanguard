@@ -119,9 +119,9 @@ header h1{
  header h1::before{
     content: "";
     position: absolute;
-    left:-.5rem;
-    width: 3.75rem;
-    height: 3.75rem;
+    left:0;
+    width: 2.75rem;
+    height: 2.75rem;
     transform: translateY(-50%);
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
     top: 50%;
