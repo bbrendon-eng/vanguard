@@ -376,6 +376,7 @@ header nav a:hover{
         height: var(--height);
     }
 }
+
 /* ADD ANIMATION ON stepUp for 1s ease-in-out forwards */
 .bar {
     animation: stepUp 1s ease-in-out forwards;
@@ -430,9 +431,94 @@ form{
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
     outline: none;
 }
+.form-group input:focus, .form-group textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+}
 
+.form-group textarea {
+    resize: vertical;
+}
+
+/* ---- FOOTER ---- */
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+footer p, footer address p {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    font-style: normal;
+}
+
+footer a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: color 0.25s ease;
+}
+
+footer a:hover {
+    color: var(--white);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 /* MEDIA QUERIES (MEDIUM) */ 
+@media (min-width: 800px) {
+    .menu-toggle{
+        display: none;
+    }
+    .nav-wrapper nav, #menu-toggle:checked + .nav-wrapper nav {
+        display: block;
+        position: static;
+        padding: 0;
+        background: none;
+    }
+
+    header nav ul{
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    #hero h3{
+        font-size: 2.75rem;
+    }
+
+    #hero p{
+        font-size:1.1rem;
+    }
+    .services-grid{
+        grid-template-columns: 1fr 1fr;
+    }
 
     #results {
         grid-template-columns: 1fr 1fr;
@@ -448,5 +534,35 @@ form{
         width: 50%;
     }
 
+    form{
+        grid-template-columns: 1fr 1fr;
+    }
+    .form-group.full-width, button.full-width{
+        grid-column: span 2;
+    }
+
+    footer .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
 
 /* MEDIA QUERIES (LARGE) */
+@media (min-width: 1024px){
+   #hero h2{
+        font-size: 3.5rem;
+    } 
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .services-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #expertise, #services, #results, #contact {
+        padding: 5rem 0;
+    }
+    #expertise h2, #services h2, #results h2 , #contact h2{
+        font-size: 2.25rem;
+    }
+}
