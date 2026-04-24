@@ -113,6 +113,7 @@ header h1{
     font-weight: 700;
     letter-spacing: 0.05em;
     position: relative;
+    padding-left: 3.5rem;
 }
 /* ADD FLOATING SVG LOGO BEFORE THE H1 */
  header h1::before{
@@ -123,6 +124,7 @@ header h1{
     height: 3.75rem;
     transform: translateY(-50%);
     background: url('images/vanguard-logo.svg') no-repeat center/contain;
+    top: 50%;
 
 }
 #menu-toggle {
@@ -218,13 +220,12 @@ header nav a:hover{
     font-weight: 600;
     border: none;
     cursor: pointer;
-    transition: background-color 0.25s ease;
-    transform: 0.2s ease;
+    transition: background-color 0.25s ease, transform 0.2s ease;
     animation: fadeInUp 0.8s ease-out 0.4s both;
 }
 
 .btn:hover{
-    background-color: var(--blue);
+    background-color: #0062cc;
     transform: translateY(-2px);
 }
 
@@ -259,7 +260,7 @@ header nav a:hover{
     color: var(--black);
 }
 
-.service-grid{
+.services-grid{
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.25rem;
@@ -509,7 +510,7 @@ footer a:hover {
         gap: 2rem;
     }
 
-    #hero h3{
+    #hero h2{
         font-size: 2.75rem;
     }
 
